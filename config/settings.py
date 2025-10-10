@@ -52,6 +52,11 @@ INSTALLED_APPS = [
     "topup",
     "bills",
     "meta",
+    "agents",
+    "notifications",
+    "fees",
+    "kyc",
+
 ]
 
 MIDDLEWARE = [
@@ -65,6 +70,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = "config.urls"
+
+AUTH_USER_MODEL = "users.User"
+PASSWORD_HASHERS = [
+    "django.contrib.auth.hashers.Argon2PasswordHasher",
+]
+
 
 # ---------------------------------------------------
 # Templates
