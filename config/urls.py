@@ -21,4 +21,9 @@ urlpatterns = [
     path('api/wallet/', include('wallet.urls')),
     path('api/transfers/', include('transfers.urls')),
     path('api/transactions/', include('transactions.urls')),
+
+    # Services
+    path('api/topup/', include('topup.urls')),
+    path('api/bills/', include('bills.urls')),
+    path('api/agents/', include('agents.urls')),
 ]

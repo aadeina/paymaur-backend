@@ -59,6 +59,8 @@ class AgentTransaction(models.Model):
         Agent,
         on_delete=models.CASCADE,
         related_name="transactions",
+        null=True,
+        blank=True,
         help_text="The agent performing this operation."
     )
     wallet = models.ForeignKey(
